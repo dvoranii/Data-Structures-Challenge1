@@ -73,12 +73,13 @@ const {
 let scoredArray = game.scored;
 let entries = scoredArray.entries();
 // console.log(keys[3]);
+// d
 
 /////////////////////////
 // Challenge #2
 // 1. c
-for (const [i, player] of entries) {
-  console.log(`Goal:${i + 1}: ${player}`);
+for (const [x, player] of entries) {
+  console.log(`Goal:${x + 1}: ${player}`);
 }
 // 2. c
 const odds = Object.values(game.odds);
@@ -92,7 +93,13 @@ for (const [team, odd] of Object.entries(game.odds)) {
   const teamStr = team === "x" ? "draw" : `victory ${game[team]}`;
   console.log(`Odd of ${teamStr} ${odd}`);
 }
-console.log(Object.entries(game.odds));
+
+// let scorers = {
+
+// }
+
+// 4.
+
 // printGoals(...x);
 // printGoals("Davies", "Muller", "Lweandowski", "Kimmich");
 // printGoals("Davies", "Muller");
